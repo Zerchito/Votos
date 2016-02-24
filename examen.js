@@ -62,14 +62,14 @@ function cantidadVotosPorCiudad(){
             }
         }
         if(si>no){
-        console.log(ciudades[index]+'Total si:'+si +'Total no:'+no+'GANA EL SI');
+        console.log(ciudades[index]+'Total si: '+si +' Total no: '+no+' GANA EL SI' );
         }else {
-        console.log(ciudades[index]+'Total si:'+si +'Total no:'+no+'GANA EL NO');
+        console.log(ciudades[index]+' Total si: '+si +' Total no: '+no+' GANA EL NO');
         }
     }
 }
 
-function cantidadDeVotos(listado){
+function cantidadDeVotos(){
     var i;
     var totalVotosSi = 0;
     var totalVotosNo = 0;
@@ -88,6 +88,7 @@ function cantidadDeVotos(listado){
 (function ejemplo(nombre, ciudad, voto){
     votar(nombre, ciudad,voto);
     listadoDePersonas();
-    
+    cantidadVotosPorCiudad();
+    cantidadDeVotos();
 
-})('Jose','chochabamba','si');
+})('Jose','cochabamba','si');
